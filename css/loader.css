@@ -1,0 +1,164 @@
+/* Center the loader */
+#loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    margin: -76px 0 0 -76px;
+    /*
+    border: 16px solid #F31126;
+    border-radius: 50%;
+    border-top: 16px solid #098fc6;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    */
+    background-image: url('/images/logo-loader-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: wobble 2s ease infinite;
+  }
+  
+  @keyframes wobble {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-25%) rotate(-5deg); }
+    30% { transform: translateX(20%) rotate(3deg); }
+    45% { transform: translateX(-15%) rotate(-3deg); }
+    60% { transform: translateX(10%) rotate(2deg); }
+    75% { transform: translateX(-5%) rotate(-1deg); }
+    100% { transform: translateX(0%); }
+  }
+
+  @-webkit-keyframes wobble {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-25%) rotate(-5deg); }
+    30% { transform: translateX(20%) rotate(3deg); }
+    45% { transform: translateX(-15%) rotate(-3deg); }
+    60% { transform: translateX(10%) rotate(2deg); }
+    75% { transform: translateX(-5%) rotate(-1deg); }
+    100% { transform: translateX(0%); }
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  /* .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  } */
+
+
+  /* .wobble {
+    animation: wobble 2s ease infinite;
+  }
+  @keyframes wobble {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-25%) rotate(-5deg); }
+    30% { transform: translateX(20%) rotate(3deg); }
+    45% { transform: translateX(-15%) rotate(-3deg); }
+    60% { transform: translateX(10%) rotate(2deg); }
+    75% { transform: translateX(-5%) rotate(-1deg); }
+    100% { transform: translateX(0%); }
+  } */
+
+
+
+
+/************************************/
+
+
+
+/* Center the loader */
+#loader2 {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  margin: -76px 0 0 -76px;  
+  border: 16px solid #F31126;
+  border-radius: 50%;
+  border-top: 16px solid #098fc6;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;  
+}
+
+#loader2-content{
+  background-image: url('/images/logo-120x120.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+@-webkit-keyframes rotate {
+  from{ -webkit-transform: rotate(0deg);   }
+  to{   -webkit-transform: rotate(360deg); }
+}
+
+.parent {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: white;
+	position: relative;
+	top: 25%;
+	border: 10px dashed red;
+	-webkit-animation: rotate 12s linear infinite;
+}
+
+#loader-container{
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -76px 0 0 -76px;  
+}
+
+.child {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border: 1px solid;
+    position: absolute;
+    top: 25px;
+    left: 9px;
+    color: white;
+	  -webkit-animation: none !important;    
+    background-image: url('/images/loader-logo-full.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

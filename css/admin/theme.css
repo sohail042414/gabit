@@ -1,0 +1,194 @@
+.error .form-control {
+    border: 1px solid red !important;
+}
+
+.errorMessage {
+    color: red;
+}
+
+.body .alert {
+    margin-left: 0px;
+}
+
+.module_menu {
+    list-style: none;
+    margin-left: 0px;
+    margin-bottom: 0px !important;
+    float: left;
+    padding-left: 0px;
+    /*width: 100%;*/
+}
+
+.module_menu li {
+    float: right;
+    display: inline;
+    margin-right: 15px;
+}
+
+.module_menu li a {
+    color: #FFFFFF !important;
+}
+
+table.table thead tr th a {
+    color: #333;
+    float: left;
+    width: 100%;
+}
+
+table.table thead tr th a {
+    background: url("../../images/admin/sort_both.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+}
+
+table.table thead tr th a.asc {
+    background: url("../../images/admin/sort_desc.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+}
+
+table.table thead tr th a.desc {
+    background: url("../../images/admin/sort_asc.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+}
+
+.grid-view {
+    padding: 0 !important;
+}
+
+.pagination ul li.selected {
+    background: none repeat scroll 0 0 #eee;
+    border-radius: 3px;
+    color: #797979;
+}
+
+table.table tbody tr.odd {
+    background-color: #F3F4F5;
+}
+
+table.table tbody tr.even {
+    background-color: white;
+}
+
+.filters input {
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.filters select {
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.grid-view-loading {
+    background: url("../../images/admin/loading.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.box .box-body .grid-view .table {
+    margin-top: 20px;
+}
+
+.box .box-body {
+    padding: 0 10px 10px 10px;
+}
+
+.detail-view-table {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.status_iconsgrid {
+    text-align: center;
+}
+
+.status_iconsgrid img {
+    height: 17px;
+    text-align: center;
+}
+
+.status_iconsgrid1 {
+    height: 17px;
+}
+
+.status_iconsview img {
+    height: 20px;
+}
+
+.content .alert {
+    margin-left: 0px;
+}
+
+.display_facebook_img {
+    height: 60px;
+    text-align: center;
+    float: left;
+}
+
+.fb_view_page_image {
+    width: 200px;
+}
+
+.login_page {
+    margin: 10px;
+}
+
+#sidebar ul li.active {
+    background: none repeat scroll 0 0 #28282e;
+    color: #1fb5ad;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+#sidebar ul li.active a{
+    color: #1fb5ad;
+}
+
+.panel-heading .breadcrumb {
+    float: right;
+    background: none;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.breadcrumb .fa {
+    margin-right: 3px;
+}
+
+.clear {
+    clear: both;
+}
+
+.panel-body .box-header {
+    float: left;
+    margin-top: 10px;
+}
+
+.box-header ul.module_menu li a {
+    padding-left: 10px;
+}
+
+.grid-view-loading {
+    background: url("../../images/admin/loading.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.loader_space {
+    height: 20px;
+    margin-top: 5px;
+}
+
+.preview_image {
+    padding: 10px 0;
+    width: 200px;
+}
+
+.view_page .alert {
+    margin-top: 20px;
+}
+
+.button-column{
+    width: 80px;
+}
+
+
+.dataTable #donations-grid_c5{
+    width: 14%;
+}
+
+/*.dataTable #donations-grid_c1{
+    padding-left: 2px;
+    padding-right: 2px;
+}*/

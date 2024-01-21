@@ -1,0 +1,2 @@
+        //ALTER TABLE `donations` ADD `trans_ref` VARCHAR(255) NULL DEFAULT NULL AFTER `status`;
+        //ALTER TABLE `donations` ADD `payment_type` VARCHAR(20) NULL DEFAULT NULL AFTER `trans_ref`;

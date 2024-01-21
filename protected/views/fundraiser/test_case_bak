@@ -1,0 +1,135 @@
+<style>
+.counter-red {
+	color:red !important;
+}
+
+.counter-green {
+	color:green !important;
+}
+</style>
+
+<?php if(isset($case_updates_list) && count($case_updates_list) > 0 && empty($_GET['case_id'])){ ?>
+<div class="box-body" id="report_manage_fundraiser" style="margin-bottom:10px;">
+    <h3>Case Updates (<?php echo count($case_updates_list); ?>)</h3>
+    <table class="demo">
+        <thead>
+        <tr>
+            <th>Fundraiser</th>
+            <th>Message</th>
+            <th>Image</th>
+            <th>Video</th>
+            <th>Documents</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+    <?php foreach($case_updates_list as $case){ ?>
+        <tr>
+        <td><?php echo $case->fundraiser->fundraiser_title; ?></td>
+        <td><?php echo substr($case->message_update,0,50); ?> </td>
+        <td><?php echo $case->image; ?></td>
+        <td><?php echo $case->video; ?></td>
+        <td>
+            <?php echo $case->document1; ?> <br>
+            <?php echo $case->document2; ?><br>
+            <?php echo $case->document3; ?>
+        </td>
+
+        <td>
+            <a href="<?php echo Yii::app()->createUrl('caseupdate/delete',array('case_id' => $case->id)); ?>"><span style="color:red;">Delete</span></a> <br>
+            <a href="<?php echo Yii::app()->createUrl('fundraiser/managefundraiser',array('tab' => 'case' ,'case_id' => $case->id)); ?>"><span style="color:green;">Update</span></a>            
+        </td>
+
+        </tr>
+    <?php } ?>
+        </tbody>
+    </table>  
+
+</div>
+<?php } ?>
+
+<?php if($case_update->isNewRecord){ ?>
+<h3>New Case Update</h3>
+<?php }else{ ?>
+    Edit Case Update
+<?php } ?>
+<?php
+    $form = $this->beginWidget('CoreGxActiveForm', array(
+        'id' => 'case-updates-form',
+        'enableAjaxValidation' => false,
+        'enableClientValidation' => true,
+        'htmlOptions' => array(
+            'enctype' => 'multipart/form-data'
+        ),
+        'clientOptions' => array(
+            'validateOnSubmit' => true,
+            'validateOnChange' => true,
+        ),
+    ));
+?>
+<div class="box-body">  
+    <?php //echo $form->hiddenField($case_update, 'user_email', array('type' => "hidden", 'value' => $_SESSION[front_email])); ?>
+    <?php //echo $form->hiddenField($case_update, 'user_name', array('type' => "hidden", 'value' => $_SESSION[front_username])); ?>
+    <div class="form-group">
+        <?php echo $form->labelEx($case_update, 'fundraiser_id');  ?>
+        <?php echo $form->dropDownList($case_update, 'fundraiser_id', CHtml::listData($fundraisers_list,'id','fundraiser_title'), array('prompt' => '– Please Select –')); 
+        ?>
+        <?php echo $form->error($case_update, 'fundraiser_id'); ?>
+    </div>    
+    <div class="form-group">
+            <?php echo $form->labelEx($case_update, 'message_update'); ?>
+            <?php echo $form->textArea($case_update, 'message_update',  array('rows'=>'10','style'=>'height:auto;resize:none;')); ?>
+            <p id="counter"></p>
+            <?php echo $form->error($case_update, 'message_update'); ?>    
+    </div>
+    <div class="form-group">
+        <?php echo $form->labelEx($case_update, 'image_file'); ?>
+        <?php echo $form->fileField($case_update, 'image_file', array('maxlength' => 250, 'class' => 'upload_file'));
+        if (!empty($case_update->image)) {
+            echo '<br><br><img class="preview_image" style="width:200px;height:auto;margin-left:px;" src="' . SITE_ABS_PATH_IMAGE_THUMB . $case_update->image . '" alt="" />';
+        }
+        ?>
+        <?php echo $form->error($case_update, 'image'); ?>
+    </div>
+    <div class="form-group" >
+        <?php echo $form->labelEx($case_update, 'video'); ?>
+        <?php echo $form->textField($case_update,/*'estado'*/'video'); ?>
+        <?php echo $form->error($case_update, 'video'); ?>   
+    </div>   
+    <p>Documents are optional, you may upload medical reports, receipts, etc. (pdf files or images) </p>
+    <div class="form-group">
+        <?php echo $form->label($case_update, 'document1_file'); ?>
+        <?php echo $form->fileField($case_update, 'document1_file', array('maxlength' => 250, 'class' => 'upload_file')); ?>
+        <?php echo $form->error($case_update, 'document1_file'); ?>
+    </div>
+    <div class="form-group">
+        <?php echo $form->label($case_update, 'document2_file'); ?>
+        <?php echo $form->fileField($case_update, 'document2_file', array('maxlength' => 250, 'class' => 'upload_file')); ?>
+        <?php echo $form->error($case_update, 'document2_file'); ?>
+    </div>
+    <div class="form-group">
+        <?php echo $form->label($case_update, 'document3_file'); ?>
+        <?php echo $form->fileField($case_update, 'document3_file', array('maxlength' => 250, 'class' => 'upload_file')); ?>
+        <?php echo $form->error($case_update, 'document3_file'); ?>
+    </div>
+
+</div> 
+<div class="box-footer">
+    <?php
+    echo GxHtml::submitButton(Yii::t('app', (empty($case_update->id) ? 'Create' : 'Update')), array('class' => 'btn_send_ans'));
+//                                    ?>
+</div>
+<?php $this->endWidget(); ?>
+
+<script>
+    $('#<?php echo Chtml::activeId($case_update,'message_update') ?>').keyup(function () {
+        var story_length = $(this).val().length;        
+        if (story_length < 400 || story_length > 500) {
+            $('#counter').text('Message length ' + story_length + ", should be between (400 and 500 characters)");
+            $('#counter').removeClass('counter-green').addClass('counter-red');
+        }else{
+            $('#counter').text('Story looks good!');
+            $('#counter').removeClass('counter-red').addClass('counter-green');
+        }
+    });
+</script>

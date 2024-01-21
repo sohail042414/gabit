@@ -1,0 +1,313 @@
+.info-text{
+	color:blue !important;
+	font-size:12px !important;
+	margin: 0px !important;
+}
+
+.box-body {
+	margin-top: 40px;
+}
+
+#ans_response1 {
+	color: green;
+	float: left;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0 0 20px;
+}
+
+#fundraise_form input[type="text"] {
+	border: 1px solid #ccc;
+	float: left;
+	height: 35px !important;
+	padding-left: 5px;
+	width: 250px;
+}
+
+#fundraise_form input.upload_file {
+	border: none !important;
+}
+
+@media only screen and (max-width: 480px) {
+	#fundraise_form input.upload_file {
+		margin-top: 10px !important;
+	}
+}
+
+
+/*    label {
+   margin-left: 92px;
+   }*/
+
+h6 {
+	font-size: 14px;
+	margin-bottom: 13px;
+	text-align: left;
+	width: 100%;
+}
+
+.form-check-label {
+	width: auto;
+	margin-left: 0 !important;
+	float: none !important;
+}
+
+.form-check-label input[type="radio"] {
+	float: left !important;
+	height: auto !important;
+	margin-right: 5px;
+	margin-top: 3px;
+	width: 10px !important;
+}
+
+.form-check {
+	margin-bottom: 10px;
+}
+
+.textbx {
+	margin-right: 5px;
+	width: 21.6% !important;
+}
+
+.textbx2 {
+	margin-right: 0 !important;
+}
+
+.form-group h6 {
+	font-weight: normal;
+}
+
+.kousr h4 {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#setup-fundraise-form {
+	margin-top: 5px;
+}
+
+#fundraise_form h4 {
+	margin-bottom: 15px;
+	margin-top: 20px;
+	text-align: left;
+}
+
+.form-check-label input[type="radio"] {
+	float: right !important;
+	margin-right: 69%;
+}
+
+.lead_tab ul li {
+	flex-grow: 0 !important;
+	margin-right: 33px;
+}
+
+.lead_tab ul li:last-child {
+	margin-right: 0;
+}
+
+.kousr {
+	margin-top: 10px;
+}
+
+#fundraise_form input[type="checkbox"] {
+	height: 25px;
+	/* margin-left: -33px; */
+	margin-top: -2px;
+	width: auto;
+}
+
+#fundraise_form label {
+	width: 192px;
+	margin-bottom: 10px;
+}
+
+.xyz input[type="checkbox"] {
+	margin-left: -33px !important;
+}
+
+.ttt div {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+
+div#bn_em {
+	font-size: 12px;
+	text-align: left;
+	line-height: 26px;
+	clear: both;
+	float: left;
+	margin: 5px 0px;
+}
+
+.shw_msg_ag_a {
+	color: red;
+	font-size: 12px;
+	text-align: left;
+	line-height: 26px;
+	clear: both;
+	margin-left: 190px;
+}
+
+.shw_msg_ag_b {
+	color: red;
+	font-size: 12px;
+	text-align: left;
+	line-height: 26px;
+	clear: both;
+	margin-left: 190px;
+}
+
+.radio-button-list {
+	height: 14px !important;
+	width: 14px !important;
+}
+
+.counter-red {
+	color:red !important;
+}
+
+.counter-green {
+	color:green !important;
+}
+
+/*
+.box-body {
+    margin-top: 40px;
+}
+#ans_response1 {
+    color: green;
+    float: left;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+#fundraise_form input[type="text"] {
+    border: 1px solid #ccc;
+    float: left;
+    height: 35px !important;
+    padding-left: 5px;
+    width: 250px;
+}
+
+#fundraise_form input.upload_file{border:none !important;}
+@media only screen and (max-width: 480px){
+    #fundraise_form input.upload_file{ margin-top:10px !important;}
+}
+
+h6 {
+    font-size: 14px;
+    margin-bottom: 13px;
+    text-align: left;
+    width:100%;
+}
+.form-check-label{
+    width: auto;
+    margin-left: 0 !important;
+    float: none  !important;
+   
+}
+
+.form-check-label input[type="radio"]{
+    float: left !important;
+height: auto !important;
+
+margin-right: 5px;
+margin-top: 3px;
+width: 10px !important;
+}
+.form-check{
+    margin-bottom: 10px;
+}
+.textbx {
+margin-right: 5px;
+width: 21.6% !important;
+}
+.textbx2 {
+margin-right: 0 !important;
+}
+.form-group h6{
+font-weight: normal;
+}
+.kousr h4 {
+font-size: 14px;
+font-weight: normal;
+}
+#setup-fundraise-form {
+margin-top: 5px;
+}
+#fundraise_form h4 {
+margin-bottom: 15px;
+margin-top: 20px;
+text-align: left;
+}
+.form-check-label input[type="radio"] {
+float: right !important;
+margin-right: 69%;
+
+}
+.lead_tab ul li{
+flex-grow: 0 !important;
+margin-right: 33px;
+}
+
+.lead_tab ul li:last-child{
+margin-right: 0;
+}
+.kousr{
+margin-top: 20px;
+}
+#fundraise_form input[type="checkbox"] {
+height: 25px;
+margin-left: -33px;
+margin-top: -2px;
+width: auto;
+}
+
+#fundraise_form label{
+width: 192px;
+margin-bottom: 10px;
+}
+.xyz input[type="checkbox"] {
+margin-left: -33px !important;
+}
+.ttt div {
+display: block;
+overflow: hidden;
+width: 100%;
+}
+div#bn_em {
+font-size: 12px;
+text-align: left;
+line-height: 26px;
+clear: both;
+margin-left: 190px;
+float: left;
+width: 277px;
+}
+.shw_msg_ag_a{
+ color: red; 
+font-size: 12px;
+text-align: left;
+line-height: 26px;
+clear: both;
+margin-left: 190px;
+}
+.shw_msg_ag_b{
+ color: red; 
+font-size: 12px;
+text-align: left;
+line-height: 26px;
+clear: both;
+margin-left: 190px;
+}
+*/
+/*
+.aaa a{
+color: #b0efff !important;
+}
+
+.lead_tab ul li a{
+color: #b0efff !important;
+}*/

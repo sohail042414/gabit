@@ -1,0 +1,18 @@
+function BuildWidget(fid) { 
+    makeFrame(fid); 
+}
+function makeFrame(fid) { 
+   // document.write('<iframe frameborder="0" scrolling="no" src="http://mobitrust.siliconithub.us/index.php/fundraiser/embedded_frame?id='+fid+'" style="min-width: 240px; width:100%; max-width:295px; height: 450px;margin:auto;display:block;"></iframe>'); 
+    document.write('<iframe frameborder="0" scrolling="no" src="http://giveyourbit.com/index.php/fundraiser/embedded_frame?id='+fid+'" style="min-width: 240px; width:100%; max-width:295px; height: 450px;margin:auto;display:block;"></iframe>');
+} 
+function BuildAffiliateWidget(affid, packet) {
+    if(typeof packet == 'object') {
+        refid = (typeof packet.refid == 'undefined') ? '' : '&refid=' + packet.refid; category = (typeof packet.category == 'undefined') ? '' : '&category=' + packet.category;
+        title = (typeof packet.title == 'undefined') ? '' : '&title=' + encodeURIComponent(packet.title);
+        callback = (typeof packet.callback == 'undefined') ? '' : '&callback=' + packet.callback; 
+        gfid = (typeof packet.gfid == 'undefined') ? '' : '&gfid=' + packet.gfid; 
+    }else {
+        refid = title = category = callback = gfid = ''; 
+    } 
+    document.write(''); 
+} 

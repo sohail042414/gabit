@@ -1,0 +1,486 @@
+@font-face {
+    font-family: 'Perpetua';
+    src: url('Perpetua.woff2') format('woff2'),
+        url('Perpetua.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corbel';
+    src: url('Corbel.woff2') format('woff2'),
+        url('Corbel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Cairo', sans-serif;
+}
+.navbar {
+    padding: 20px 0 !important;
+}
+.navbar-brand img {
+    width: 7%;
+    position: absolute;
+    top: 30px;
+}
+ul.navbar-nav.ms-auto.my-2.my-lg-0.navbar-nav-scroll {
+    width: 100%;
+    justify-content: end;
+}
+.container {
+    max-width: 95% !important;
+}
+.navbar li a {
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    color: #24344f !important;
+    margin: 0px 13px;
+}
+.inner-pagee .col-lg-9.rewards-right-area {
+    max-height: 76vh;
+    overflow-y: scroll;
+}
+a.navbar-brand {
+    z-index: 1;
+}
+.col-lg-3.rewards-left-area {
+    background: url('/css/rewards/images/inner-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 76vh;
+    width: 21.5%;
+}
+.navbar-nav {
+    margin: 0 auto;
+}
+.sign-hed {
+    background: #517bbe00;
+    border: 1px solid #ffc104;
+    border-radius: 4px;
+    padding: 4px 24px;
+    color: #ffc104;
+    font-size: 14px;
+    font-family: 'Cairo', sans-serif;
+}
+.sign-hed:hover{
+	background: #ffc104;
+	color: #24344f;
+}
+.terms-btn {
+    background: #ffc104;
+    border: 1px solid #ffc104 !important;
+    color: #fff;
+    padding: 7px 45px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.terms-btn:hover{
+	background: #ffc104 !important;
+	box-shadow: 0 5px 10px -5px rgba(47,68,102,.85);
+	color: #fff;
+}
+.menu {
+    position: relative;
+}
+.menu:before{
+	content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.2rem;
+    display: block;
+    height: 0.125rem;
+    width: 0;
+    background-color: #ffc104;
+    transition: .15s cubic-bezier(.2,0,.4,1);
+    transition-property: width,transform;
+    width: 0%;
+}
+.menu:hover:before{
+    width: 100% !important;
+}
+.row {
+    align-items: center;
+}
+.rewards-left-area {
+    padding: 0 !important;
+}
+.reward-img img {
+    width: 100%;
+    height: 76vh;
+    object-fit: cover;
+    object-position: top right;
+}
+.rewards-right-area {
+    padding-left: 2% !important;
+}
+.rewards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rewards-right-area h2{
+	font-size: 30px;
+	font-weight: 500;
+	color: #244f7b;
+	font-family: 'Cairo', sans-serif;
+}
+
+.rewards-right-area h1 {
+    font-size: 45px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 20px 0;
+    color: #231671;
+
+}
+.rewards-right-area p {
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+.fund-logo img {
+    width: 125px;
+    margin-top: -10px;
+    padding-left: 5px;
+}
+.reward-img {
+    height: 80vh;
+    position: relative;
+}
+
+.footer {
+    padding: 10px 0;
+    background: #f5860b;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.col-lg-6.rewards-right-area {
+    padding-left: 2% !important;
+}
+.footer-left p,.footer-right p{
+	font-size: 14px;
+	font-family: 'Cairo', sans-serif;
+	color: #fff;
+	margin: 0;
+}
+.footer-left p{
+	text-align: left;
+}
+.footer-right p{
+	text-align: right;
+}
+.taken {
+    padding: 100px 0 0;
+    text-align: center;
+    margin-bottom: 250px;
+    background: #f4f5f7;
+}
+.taken-hea img {
+    margin-bottom: -250px;
+}
+.taken-hea h3 {
+    color: #24344f;
+    font-size: 22px;
+    line-height: 1.5;
+    padding-bottom: 60px;
+    font-family: 'Cairo', sans-serif;
+    position: relative;
+}
+.taken-hea h3::before {
+    content: "";
+    background: #d33659;
+    width: 88px;
+    height: 2px;
+    position: absolute;
+    bottom: 23px;
+    right: 47%;
+}
+.taken-hea p{
+	font-size: 15px;
+	color: #24344f;
+	font-family: 'Cairo', sans-serif;
+	line-height: 2;
+	letter-spacing: .4px;
+}
+body.inner-pagee .rewards-right-area h1 {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 20px 0 20px !important;
+    color: #000;
+}
+body.inner-pagee .rewards-right-area p {
+    font-size: 18px;
+}
+
+@media screen and (min-width:1435px) {
+.value {
+    position: absolute;
+    right: 16vw;
+    font-size: 2.5vw;
+    color: #fff;
+    top: 3vw;
+    font-family: 'Corbel';
+    font-weight: bold;
+}
+.date {
+    position: absolute;
+    bottom: 11vw;
+    right: 12vw;
+    font-size: 32px;
+    color: red;
+    font-family: 'Perpetua';
+    font-weight: bold;
+}
+}
+
+@media screen and (max-width: 1367px) {
+    .rewards-right-area h1 {
+        font-size: 45px;
+        line-height: 45px;
+        margin: 20px 0 20px !important;
+        color: #231671;
+    }
+    body.inner-pagee .rewards-right-area h1 {
+        font-size: 30px;
+        line-height: 45px;
+        margin: 20px 0 20px !important;
+        color: #000;
+    }
+    body.inner-pagee .rewards-right-area p {
+        font-size: 18px;
+    }
+    .rewards-right-area p {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+	.rewards-right-area {
+    padding-top: 0px;
+	}
+	.rewards-right-area h2 {
+    font-size: 20px;
+	}
+	.reward-card-badge img {
+    margin: 0 0 -80px 0;
+	}
+    .date {
+        bottom: 21vh;
+        right: 23vh;
+        position: absolute;
+        color: red;
+        font-family: 'Perpetua';
+        font-weight: bold;
+        font-size: 32px;
+    }
+    .value {
+        position: absolute;
+        right: 19vw;
+        font-size: 2.5vw;
+        color: #fff;
+        top: 3vw;
+        font-family: 'Corbel';
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:1280px) {
+    .value {
+        position: absolute;
+        right: 36vh;
+        font-size: 2.5vw;
+        color: #fff;
+        top: 8vh;
+        font-family: 'Corbel';
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 1100px) {
+	.rewards-right-area h2 {
+    font-size: 20px;
+	}
+	span.fund-logo img {
+    width: 30%;
+	}
+
+}
+@media screen and (max-width: 1024px) {
+	 .rewards {
+    display: block;
+	}
+	.rewards-left-area {
+    width: 100%;
+	}
+	.rewards-right-area {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+	}
+	.fund-logo img {
+    width: 20% !important;
+	}
+	
+	.reward-card-badge img {
+    margin: 0 0 -120px 0;
+	}
+    .value {
+        right: 29vw;
+        top: 6vw;
+        font-size: 4vw;
+    }
+    .date {
+        bottom: 11vw;
+        right: 20vw;
+    }
+}
+@media screen and (max-width: 992px) {
+	.footer-left p, .footer-right p  {
+    text-align: center;
+	}
+	.rewards-right-area {
+    padding: 50px 20px !important;
+	}
+	.navbar-brand img {
+    width: 12%;
+	}
+	div#navbarScroll {
+    text-align: center;
+	}
+	.navbar-nav {
+    text-align: center;
+    width: 30%;
+	}
+	.taken-hea img {
+    width: 100%;
+	}
+    .value {
+        right: 50vw;
+        top: 10vw;
+        font-size: 7vw;
+    }
+    .date {
+        bottom: 31vw;
+        right: 35vw;
+        font-size: 55px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .date {
+        bottom: 2vw;
+        right: 20vw;
+        font-size: 35px;
+    }
+    .value {
+        right: 26vw;
+        top: 5vw;
+        font-size: 5vw;
+    }
+}
+@media screen and (max-width: 768px) {
+	.reward-card-badge img {
+    margin: 0px 0 -90px 0;
+	}
+	.rewards {
+    margin: 50px 0;
+	}
+	.fund-logo img {
+    width: 30% !important;
+	}
+    .value {
+        right: 45vw;
+        top: 10vw;
+        font-size: 7vw;
+    }
+    .date {
+        bottom: 28vw;
+        right: 32vw;
+        font-size: 5.5vw;
+    }
+	
+}
+@media screen and (max-width: 767px) {
+	.rewards-right-area h2 {
+    font-size: 20px;
+	}
+	.reward-card-badge img {
+    margin: 0px 0 -60px 0;
+	}
+	.navbar-brand img {
+    width: 25%;
+	}
+	.taken {
+    padding: 50px 0 0;
+	}
+    .value {
+        right: 27vw;
+        top: 4vw;
+        font-size: 4vw;
+    }
+    .date {
+        bottom: 15vw;
+        right: 16vw;
+        font-size: 4.5vw;
+    }
+
+}
+@media screen and (max-width: 675px) {
+	.taken-hea img {
+    margin-bottom: -170px;
+	}
+	.taken-hea h3 br, .taken-hea p br{
+		display: none;
+	}
+    .reward-img img {
+        height: unset;
+    }
+    .reward-img {
+        height: unset;
+    }
+    footer.footer {
+        position: unset;
+    }
+    ul.navbar-nav.ms-auto.my-2.my-lg-0.navbar-nav-scroll {
+        justify-content: unset;
+        background: #fff !important;
+        min-height: 180px;
+        z-index: 999999;
+        position: absolute;
+        left: 0;
+        transition: 0.3s;
+    }
+    .col-lg-3.rewards-left-area {
+        min-height: 100vw;
+        width: 100%;
+    }
+    .col-lg-9.rewards-right-area {
+        max-height: unset !important;
+        overflow: unset !important;
+        padding: 10px !important;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light {
+        padding: 10px 0 !important;
+    }
+    .navbar-brand img {
+        top: 10px;
+    }
+    .rewards-right-area h1 {
+        font-size: 30px;
+        line-height: 30px;
+        margin: 20px 0 20px !important;
+        color: #231671;
+    }
+    .rewards-right-area p {
+        font-size: 20px;
+        line-height: 20px;
+        }
+}

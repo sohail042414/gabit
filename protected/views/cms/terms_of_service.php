@@ -1,0 +1,15 @@
+<?php echo $this->renderPartial('/layouts/cms_banner'); ?>
+<!--Start content----------------------------------------------------------->
+
+<div class="inner-container">
+    <div class="inner-left">
+        <div class="inner-page">
+            <!--        code for page content -->
+            <h4>Terms of Service</h4>
+            <p><?php echo $page_content; ?></p>
+        </div>
+        <a href="<?php echo $this->createUrl('fundraise/index') ?>" class="button-tab">Start a Fundraiser</a>
+        <a href="<?php echo $this->createUrl('fundraiser/locatefundraiser') ?>" class="button-tab">Explore Fundraisers</a>
+    </div>
+    <?php echo $this->renderPartial('/layouts/cms_sidebar'); ?>
+</div>

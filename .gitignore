@@ -1,5 +1,10 @@
+/cgi-bin
 /uploads
 /assets
 /vendor
 /protected/config
 /protected/runtime
+/apns-dev.pem
+/error_log
+/robots.txt
+/test-email.php
